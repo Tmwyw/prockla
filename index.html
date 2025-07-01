@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Твой гороскоп готов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            background: radial-gradient(circle at top, #1f0036 0%, #0a001a 100%);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 720px;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #ff66d9;
+            margin-bottom: 20px;
+        }
+
+        .astro-img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #bbb;
+            margin: 0 auto 15px;
+        }
+
+        .btn {
+            margin-top: 30px;
+            background: linear-gradient(to right, #cc00ff, #9900ff);
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 14px 32px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #b300e6, #7a00cc);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Astrological_Wheel.svg/512px-Astrological_Wheel.svg.png" alt="zodiac" class="astro-img">
+        <h1>✨ Твой персональный гороскоп уже готов</h1>
+        <p>Астрологический анализ с учётом натальной карты,<br> даты рождения и текущих транзитов планет</p>
+        <br>
+        <button class="btn" onclick="redirect()">Получить гороскоп</button>
+        <div class="footer">
+            🔒 Ваши данные обрабатываются анонимно. Без регистрации.
+        </div>
+    </div>
+
+    <script>
+        function redirect() {
+            window.location.href = "https://example.com";
+        }
+    </script>
+</body>
+</html>
