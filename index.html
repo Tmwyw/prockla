@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Твой персональный гороскоп готов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #ffb3ff;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #c0c0c0;
+        }
+        .dob {
+            margin: 20px 0;
+            font-size: 16px;
+            background-color: #fff;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .btn {
+            background-color: #6e00ff;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #5400cc;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Твой персональный гороскоп уже готов</h1>
+        <p>Рассчитан на основе натальной карты, даты рождения и транзитов планет</p>
+        <div class="dob">Дата рождения: [ 07.01.1995 ]</div>
+        <br>
+        <button class="btn" onclick="redirect()">Получить гороскоп</button>
+        <div class="footer">
+            🔒 Ваши данные обрабатываются анонимно. Астрологический анализ без регистрации.
+        </div>
+    </div>
+
+    <script>
+        function redirect() {
+            window.location.href = "https://example.com";
+        }
+    </script>
+</body>
+</html>
